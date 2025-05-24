@@ -1,5 +1,6 @@
-import 'package:bloc_cubit_flutter_demo/cubit/post_cubit.dart';
-import 'package:bloc_cubit_flutter_demo/cubit/post_state.dart';
+import 'package:bloc_cubit_flutter_demo/bloc/post_bloc.dart';
+import 'package:bloc_cubit_flutter_demo/bloc/post_event.dart';
+import 'package:bloc_cubit_flutter_demo/bloc/post_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -14,7 +15,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
-    context.read<PostCubit>().fetchPosts();
+    context.read<PostCubit>().add(FetchPostEvent());
   }
 
   @override

@@ -1,5 +1,5 @@
-import 'package:bloc_cubit_flutter_demo/cubit/post_cubit.dart';
-import 'package:bloc_cubit_flutter_demo/cubit/post_state.dart';
+import 'package:bloc_cubit_flutter_demo/bloc/post_bloc.dart';
+import 'package:bloc_cubit_flutter_demo/bloc/post_state.dart';
 import 'package:flutter/material.dart';
 import 'package:bloc_cubit_flutter_demo/home.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
